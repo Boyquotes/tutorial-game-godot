@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://0nv4f7k566f"]
+[gd_scene load_steps=6 format=3 uid="uid://0nv4f7k566f"]
 
 [ext_resource type="Texture2D" uid="uid://cu47dmkqykre1" path="res://art/playerGrey_up1.png" id="1_bbxij"]
+[ext_resource type="Script" path="res://Player.cs" id="1_esh7s"]
 [ext_resource type="Texture2D" uid="uid://bj1jjptovdi1j" path="res://art/playerGrey_up2.png" id="2_lwtse"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ct1km"]
@@ -27,6 +28,7 @@ radius = 28.0
 height = 68.0
 
 [node name="Player" type="Area2D"]
+script = ExtResource("1_esh7s")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
